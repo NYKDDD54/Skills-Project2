@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    max-width: 1200px;
+    margin: 0;
+}
+
+#footer {
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+}
+
+/* main {
+    min-height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+} */
+
+.topic {
+    color: white ;
+    text-decoration: none;
+}
+.topbar {
+    background-color: #2a5196;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.paddle-white {
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 40px;
+    position: absolute;
+}
+
+.hamburger {
+    top: 0;
+    left: 0;
+    padding: 5px;
+    width: 35px;
+    height: 30px;
+    position: absolute;
+}
+
+.nav_bar {
+    background-color: #2a5196;
+    height: 100vh;
+    width: 20vh;
+    margin: 0;
+    position: fixed;
+    left: -30vw;
+    transition: 0.5s;
+}
+/* used by jquery. when clicked on the hamburger menu, change to this class and will toggle the menu. */
+.nav_bar.active {
+    left: 0vw;
+    position: fixed;
+}
+
+li {
+    margin-top: 20px;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+}
+
+.canoe {
+    width: 75%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.word {
+    position: absolute;
+    /* text-align: center; */
+    top: 15%;
+    width: 100%;
+    font-size: 250%;
+}
+
+.canada {
+    padding: 25px;
+}
+
+.paragraph {
+    color:black;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+h1 {
+    padding: 10px;
+}
+
+h2 {
+    padding: 10px;
+    /* margin-top: 20px; */
+    margin-bottom: 30px;
+    font-size:xx-large;
+}
+
+p {
+    margin-left: 10px;
+    height: 20px;
+}
+
+h3 {
+    padding: 40px;
+    padding-bottom: 20px;
+    font-size: x-large;
+    /* margin-top: 20px; */
+}
+
+h4 {
+    font-size: large;
+}
+
+#logout_message {
+    font-size:large;
+    margin:40px;
+}
+
+#header {
+    font-size:xx-large;
+    margin: 30px;
+}
+
+#form {
+    padding-top: 40px;
+}
+
+#logout {
+    display: block;
+    position:absolute;
+    /* width:100%; */
+    float: right;
+    right: 0px;
+    /* text-align: right; */
+}
+
+#line {
+    border-top: 1px solid #000;
+    margin-top:20px;
+}
+
+.sum1 {
+    padding: 0;
+    height: 100%;
+    line-height: 100%;
+}
+
+.sum2 {
+    padding: 0;
+    height: 100%;
+    line-height: 100%;
+}
+
+hr.solid {
+    border-top: 1px solid #000;
+}
+
+.line {
+    border-top: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    /* * {
+        width: 100%;
+    } */
+    .canoe {
+        width: 100%;
+        position:relative;
+        z-index: 1;
+    }
+    .paragraph {
+        width: 100%;
+    }
+    
+    .nav_bar.active {
+        z-index: 2;
+    }
+
+    .word {
+        z-index: 2;
+        font-size: 250%;
+    }
+    
+}
+
+/* Below 800px all font sizes change */
+@media only screen and (max-width: 800px) {
+    .paragraph {
+        font-size: small;
+    }
+
+    .word {
+        font-size: 250%;
+    }
+
+    h2 {
+        font-size:x-large;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav_bar {
+        width: 150px;
+    }
+}
